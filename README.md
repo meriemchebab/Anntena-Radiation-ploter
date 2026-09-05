@@ -1,5 +1,5 @@
 # Antenna Radiation Pattern Visualizer
-
+![AntennaRay](assets/AntennaRay.png)
 ## Overview
 
 This project is a university team project developed by Computer Science students for the Faculty of Electrical Engineering. It provides a desktop application for reading antenna radiation-pattern data and turning it into visual, interactive plots.
@@ -33,17 +33,24 @@ Although the project was implemented by Computer Science students, it addresses 
 - Experiment with a 3D radiation-pattern surface generated from the available E-plane and H-plane data
 
 ## 2D Plotting
+![2D PLots](assets/2D-split.png)
+![2d plots](assets/2D2.png)
+### lobs highlight
+![lobs highligh](assets/highlight_lobs.png)
+____
 
 2D plotting is the primary and most developed part of the application. Imported values are interpreted as measurements over angular positions and displayed using polar coordinates. The application can show the H-plane and E-plane independently or overlay them in a single plot for comparison.
 
 The processing workflow includes optional normalization and smoothing. Normalization shifts each pattern relative to its maximum, which makes it easier to compare the shape of patterns even when their absolute levels differ.
 
 ## 3D Plotting Attempt
-
+![3D PLots](assets/3D.png)
 The repository also contains an experimental 3D visualization. It creates a surface from the H-plane and E-plane arrays and converts the resulting spherical-style data into Cartesian coordinates.
 
 This 3D view is an approximation and should be considered a visualization experiment rather than a complete physical reconstruction of an antenna's true 3D radiation field. A scientifically exact 3D pattern would require measurements covering the relevant angular dimensions and a clearly defined interpolation or reconstruction method.
-
+## online ploting
+this feature let's us plot the data into the browser for better visuals using PLotly
+![online PLots](assets/onlineview.png)
 ## Input Data
 
 The `files/` directory contains the data used for the project, including:
